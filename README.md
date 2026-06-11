@@ -4,7 +4,7 @@ Here you can find a list of Skills supported by Numix MCP server
 # List of Skills
 | Name | Description |
 | -----| -----------|
-| calculate_rnd_credit | This skill is used to calculate the estimated amount of R&D Tax Credits based on the provided data. Skills features Step by Step calculation with detailed explanation |
+| start_rnd_credit | Step by step guide to calculate R&D Tax Credits |
 
 # Adding Skills
 Below you can find the information how to add Skills to corresponding AI agent
