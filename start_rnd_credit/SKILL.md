@@ -261,13 +261,9 @@ Before proceeding to the calculation, ask client to confirm that all data is cor
 
 Once client confirms that all data is correct and ready to proceed, call `calculate_credit` tool to calculate the R&D credit. Once the calculation is done, show the estimated credit amount to the client.
 
-## Step 8. Generating Forms
-In this step we're going to generate pre-filled Form 6765 and Form 3523 for the client to review and download. Call `generate_forms` tool to generate these forms based on the collected data and calculated credit. Once the forms are generated, show client generated forms with links to download. Ask client to review if everything is correct. If client wants to make any changes, he can do it via Dashboard by going to this page: https://app.numix.app/dashboard/tax/credits.
-* To change supplies, client needs to select **Supplies** tab and review expenses and update their R&D Status
-* To change wages, client needs to select **Employees** tab, review employees and their R&D percentage and update it if necessary
-* To change Contractors payments, client needs to select **Contractors** tab, review contractors and their R&D percentage and update it if necessary
+## Step 8. Contact Numix
+Once the client confirms that everything is OK, display him a button "I am done", text input for comments (if any) and message that from this point we'll take it. Once client clicks the button, call the the `credits_done` tool with client's message. This will notify our team that the client has completed the process and provide us with any comments or feedback they may have. After that, our team will review the collected data and the estimated credit amount, and will contact the client if we need any additional information or clarification.
 
-Once the changes are made, client can call `calculate_credit` tool again to see how these changes affect the estimated credit amount. Client can also generate updated forms by calling `generate_forms` tool again.
 
 ## Error handling
 
